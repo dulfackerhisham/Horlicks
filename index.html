@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link href="//db.onlinewebfonts.com/c/d9eab5143efc98cbd074fe4083108c58?family=ZoojaPro" rel="stylesheet" type="text/css"/><link href="https://fonts.cdnfonts.com/css/gotham-bold" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="data:image/png;base64,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">
+    <title>Horlicks - Leading Health & Nutrional Drink Kids & Adults |</title>
+
+
+</head>
+<body>
+    <header>
+        <nav class="header-nav">
+            <div class="logo">
+                <img src="images/logo.png.rendition.380.380.png" alt="Horlicks Logo">
+            </div>
+
+            
+
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#">Horlicks</li><i class="fa-solid fa-angle-down"></i>
+                    <li><a href="#">Junior &nbsp;<br>Horlicks</a></li><i class="fa-solid fa-angle-down"></i>
+                    <li><a href="#">Horlicks &nbsp;<br>Nutrimeter</a></li><i class="fa-solid fa-angle-down"></i>
+                    <li><a href="#">Horlicks&nbsp;<br>NutriGummies </a></li>
+                </ul>
+            </div>
+
+            <div class="horlicks-plus-logo">
+                <a href="#"><img src="images/horlicks-plus-gray.webp" alt="Horlicks plus"></a>
+            </div>
+
+            <div class="search-bar">
+                <input type="text">
+                <span class="material-symbols-outlined">
+                    search
+                    </span>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-1">
+            <img src="images/section-1.jpg.rendition.1960.1960.webp" alt="Horlicks">
+        </section>
+
+        <section class="section-2">
+            <aside>
+                <h2>
+                    <span class="gotham-bold">How Horlicks</span>
+                    <br>
+                    <span class="zoojaPro">Helps?</span>
+                </h2>
+                <p class="sub-heading-1">Horlicks, made from Milk, Wheat and 27 vital nutrients, helps children become taller, stronger and sharper. Let them continue to amaze you with their growth!</p>
+           
+                <div class="three-circles">
+                    <div class="circle-1">
+                        <div class="taller-img">
+                    <img src="images/taller.png.rendition.767.767.webp" alt="Horlicks can make you taller">
+                        </div>
+                        <div class="more-born-area">
+                    <p>
+                        <span>
+                            More
+                        </span>
+                        <br>
+                        <span>
+                            Bone Area
+                        </span>
+                    </p>
+                        </div>
+                    </div>
+
+                    <div class="circle-2">
+                        <div class="stronger-img">
+                            <img src="images/47761842-stronger.png.rendition.767.767.png" alt="Horlicks make you stronger">
+                        </div>
+                        <div class="more-muscles">
+                            <p>
+                                <span>More</span>
+                                <br>
+                                <span>Muscles</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="circle-3">
+                        <div class="sharper-img">
+                            <img src="images/47761845-sharper.png.rendition.767.767 (1).png" alt="Horlicks makes your brain sharper">
+                        </div>
+                        <div class="better-concentration">
+                            <p>
+                                <span>Better</span>
+                                <br>
+                                <span>Concentration</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+            <article>
+                <div class="article-1">
+                    <div class="nutrimeter-img">
+                        <img src="images/horlicks-nutrimeter.jpg.rendition.380.380.jpg" alt="Horlicks Nutrimeter">
+                    </div>
+                    <p class="nutrimeter-p1">Horlicks Nutrimeter</p>
+                    <p class="nutrimeter-p2">Use the Horlicks Nutrimeter diet assessment tool to find out if your child is getting the nutrition they need for their overall growth and development</p>
+                    <br>
+                    <a href="#">Calculate Now</a>
+                </div>
+
+                <div class="article-2">
+                    <div class="science-horlicks-img">
+                        <img src="images/47756898-base-thumbnail-2.jpg.rendition.380.380.jpg" alt="The science inside">
+                    </div>
+                    <p class="science-p1">The Science Inside</p>
+                    <p class="science-p2">Horlicks contains nutrients that get absorbed in the blood and reach all parts of the body. These nutrients are utilised for all-round growth and development.</p>
+                    <br>
+                    <a href="#">Read On</a>
+                </div>
+
+                <div class="article-3">
+                    <div class="child-nutrition-img">
+                        <img src="images/Your nutrition.jpg.rendition.380.380.jpg" alt="Your Child Nutrition & Development">
+                    </div>
+                    <p class="child-p1">Child Nutrition & Development</p>
+                    <p class="child-p2">The right nutrition is vital for a child's growth. It is important for the development of bone area, muscle mass and enhanced concentration.</p>
+                    <br>
+                    <a href="#">Read On</a>
+                </div>
+
+            </article>
+        </section>
+
+        <section class="section-3">
+            <div class="sub-section-3">
+            <aside>
+                <h2>
+                    <span class="sec-3-heading">Delicious Horlicks</span>
+                    <br>
+                    <span class="sec-3-zoojaPro">Flavours</span>
+                </h2>
+                <p>Available in two yummy flavours - Classic Malt and Chocolate Delight Flavour, so there's no compromise on nutrition and taste!</p>
+            </aside>
+
+            <article class="section-3-article-1">
+                <div class="section-3-content">
+                <img src="images/45038299-base-malt.png.rendition.767.767.png" alt="Horlicks classic malt"> 
+                <a href="#">View</a>
+            </div>
+
+            <article class="section-3-article-2">
+                <div class="section-3-content">
+                <img src="images/45038296-base-chocolate.png.rendition.767.767.png" alt="Horlicks Chocalate Delight Flavour"> 
+                <a href="#">View</a>
+            </div>
+            </article>
+        </div>
+        </section>
+
+        <section class="section-2">
+            <div class="aside-2">
+                <h2>
+                    <span class="gotham-bold">More About Your Child's Health &</span>
+                    <br>
+                    <span class="zoojaPro">Nutrition</span>
+                </h2>
+                <p class="sub-heading-1">Here's the information you need to support your child's growth and development journey to reach their full potential.</p>
+                <a class="view-all-articles" href="#">View all articles</a>
+            </div>
+
+            <article>
+                <div class="article-1">
+                    <div class="nutrimeter-img">
+                        <img src="images/50365848-1.jpg.rendition.380.380.jpg" alt="Horlicks Nutrimeter">
+                    </div>
+                    <p class="nutrimeter-p1">Way To Develop Immunity In Your Children</p>
+                    <p class="nutrimeter-p2">While you can protect your child from most things, to prevent illness, they'll need a strong immune system. Here's what you can do to help.</p>
+                    <br>
+                    <a href="#">Read On</a>
+                </div>
+
+                <div class="article-2">
+                    <div class="science-horlicks-img">
+                        <img src="images/50365849-2.jpg.rendition.380.380.jpg" alt="The science inside">
+                    </div>
+                    <p class="science-p1">Why Do Children Need IRON More than Any Other?</p>
+                    <p class="science-p2">While we all need iron, it is a vital nutrient for a child's growth and development. Do you know the signs of iron deficiency?</p>
+                    <br>
+                    <a href="#">Read On</a>
+                </div>
+
+                <div class="article-3">
+                    <div class="child-nutrition-img">
+                        <img src="images/50365857-3.jpg.rendition.380.380.jpg" alt="Your Child Nutrition & Development">
+                    </div>
+                    <p class="child-p1">Support Your Child's Immunity With the  Right Nutrion</p>
+                    <p class="child-p2">Adequate intake of the right kind of nutrition helps your child's body in building effective defence mechanisms against illness and disease.</p>
+                    <br>
+                    <a href="#">Read On</a>
+                </div>
+
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <section class="footer-wrapper">
+            <section class="side-1">
+                <img class="f-logo" src="images/38293127-footer-logo.png.rendition.380.380.webp" alt="Horlicks Logo">
+                <br>
+                <h3>Our Range</h3>
+                
+                <div class="double-logos">
+                    <img class="f-img-1" src="images/horlicks-blue-header-logo.webp" alt="Horlick Logo">
+                    <img class="f-img-2" src="images/horlicks-plus-gray.webp" alt="Horlicks Plus Logo">
+                </div>
+            </section>
+
+            <section class="side-2">
+                <h3>Horlicks</h3>
+                <p>The Science Inside</p>
+                <p>Nutrition & Development</p>
+                <p>Wacth Our TVC</p>
+                <p>Buy Now</p>
+            </section>
+
+            <section class="side-3">
+                <h3>Junior Horlicks</h3>
+                <p>The Science Inside</p>
+                <p>Nutrition & Development</p>
+                <p>Wacth Our TVC</p>
+                <p>FAQs</p>
+                <p>Buy Now</p>
+            </section>
+
+            <section class="side-4">
+                <h3>Horlicks Nutrimeter</h3>
+                <p>Calculate Now</p>
+                <p>Login</p>
+            </section>
+
+            <section class="side-5">
+                <h3>Horlicks Nutri Gummies</h3>
+            </section>
+
+            <section class="side-6">
+                <h3>
+                    <span>Sign Up For Horlicks</span>
+                    <br>
+                    <span>news and promotions</span>
+                </h3>
+
+                    <br>
+                    <div class="input-button-container">
+                        <input type="text" placeholder="Email address">
+                        <button>Continue</button>
+                      </div>
+
+                      <div class="connect">
+                        <h4>Follow Us</h4>
+                        <div class="icons">
+                           <i class="fa-brands fa-facebook"></i>
+                           <i class="fa-brands fa-square-instagram"></i>
+                           <i class="fa-brands fa-youtube"></i>
+                        </div>
+                        <br>
+                      </div>
+                      <h4 class="connect-us">Connect Us</h4>
+            </section>
+
+        </section>
+        <hr class="footer-divider">
+
+        <div class="footer-ending">
+            <nav class="footer-nav">
+                <ul>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Privacy Notice</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Cookie Notice</a></li>
+                </ul>
+            </nav>
+
+            <div class="unilever-text">
+                <p>2021 Unilever.All rights reserved</p>
+            </div>
+
+            <div class="unilever-img">
+                <img src="images/1787052-unilever-logo.png.rendition.380.380.png" alt="unilever">
+            </div>
+        </div>
+
+    </footer>
+    
+</body>
+</html>
